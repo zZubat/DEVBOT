@@ -1,91 +1,69 @@
-version: "3.1"
+version: "3.1"  
+nlu:  
+  - intent: cumprimentar  
+    examples: |  
+      - oi  
+      - boa dia  
+      - boa tarde  
+      - boa noite  
+      - e aí?  
+      - tudo bem?  
 
-nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: agradecer  
+    examples: |  
+      - obrigado  
+      - muito obrigado  
+      - valeu  
+      - agradeço  
+      - grato  
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: informar_genero  
+    examples: |  
+      - gosto de [comédia](genero)  
+      - quero ver um filme de [ação](genero)  
+      - prefiro [drama](genero)  
+      - quero ver um filme de [suspense](genero)  
+      - me indica um filme de [terror](genero)  
+      - me indica um filme de [romance](genero)  
+      - me indica um filme de [ficção científica](genero)  
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: negar  
+    examples: |  
+      - não quero  
+      - não gosto  
+      - prefiro outro gênero  
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: despedir  
+    examples: |  
+      - tchau  
+      - até logo  
+      - adeus  
+      - até a próxima  
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: afirmar  
+    examples: |  
+      - sim  
+      - quero  
+      - gosto  
+      - pode ser  
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: pedir_ajuda  
+    examples: |  
+      - pode me ajudar?  
+      - não sei o que fazer  
+      - como funciona?  
+      - me ajuda  
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: pedir_recomendacao  
+    examples: |  
+      - me recomenda um filme  
+      - quero uma recomendação  
+      - me indique um filme  
+      - me sugira um filme  
+
+  - intent: informar_genero_nao_listado  
+    examples: |  
+      - quero ver um filme de [documentário](genero)  
+      - prefiro [musical](genero)  
+      - me indica um filme de [animação](genero)  
+      - quero ver um filme de [faróestes](genero)  

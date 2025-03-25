@@ -1,30 +1,65 @@
-version: "3.1"
+version: "3.1"  
+stories:  
+  - story: fluxo_feliz  
+    steps:  
+      - intent: cumprimentar  
+      - action: utter_cumprimentar  
+      - intent: informar_genero  
+      - action: action_recomendar_filme  
+      - intent: agradecer  
+      - action: utter_agredecern  
+      - intent: despedir  
+      - action: utter_despedir  
 
-stories:
+  - story: fluxo_genero_nao_listado  
+    steps:  
+      - intent: cumprimentar  
+      - action: utter_cumprimentar  
+      - intent: informar_genero_nao_listado  
+      - action: utter_genero_nao_listado  
+      - intent: informar_genero  
+      - action: action_recomendar_filme  
+      - intent: agradecer  
+      - action: utter_agredecern  
+      - intent: despedir  
+      - action: utter_despedir  
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: fluxo_negacao  
+    steps:  
+      - intent: cumprimentar  
+      - action: utter_cumprimentar  
+      - intent: informar_genero  
+      - action: action_recomendar_filme  
+      - intent: negar  
+      - intent: informar_genero  
+      - action: action_recomendar_filme  
+      - intent: agradecer  
+      - action: utter_agredecern  
+      - intent: despedir  
+      - action: utter_despedir  
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: fluxo_ajuda  
+    steps:  
+      - intent: cumprimentar  
+      - action: utter_cumprimentar  
+      - intent: pedir_ajuda  
+      - action: utter_ajuda  
+      - intent: informar_genero  
+      - action: action_recomendar_filme  
+      - intent: agradecer  
+      - action: utter_agredecern  
+      - intent: despedir  
+      - action: utter_despedir  
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: fluxo_pedir_recomendacao  
+    steps:  
+      - intent: cumprimentar  
+      - action: utter_cumprimentar  
+      - intent: pedir_recomendacao  
+      - action: utter_pedir_recomendacao  
+      - intent: informar_genero  
+      - action: action_recomendar_filme  
+      - intent: agradecer
+      - action: utter_agredecer
+      - intent: despedir
+      - action: utter_despedir
