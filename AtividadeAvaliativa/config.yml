@@ -1,0 +1,17 @@
+version: "3.0"
+language: "pt"
+
+pipeline:
+  - name: "WhitespaceTokenizer"
+  - name: "RegexFeaturizer"
+  - name: "LexicalSyntacticFeaturizer"
+  - name: "CountVectorsFeaturizer"
+  - name: "DIETClassifier"
+  - name: "EntitySynonymMapper"
+  - name: "ResponseSelector"
+
+policies:
+  - name: "MemoizationPolicy"
+  - name: "TEDPolicy"
+    max_history: 5
+  - name: "RulePolicy"

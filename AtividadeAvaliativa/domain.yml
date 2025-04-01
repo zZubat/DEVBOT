@@ -1,0 +1,45 @@
+version: "3.1"
+intents:
+  - saudacao
+  - despedida
+  - relatar_problema
+  - solicitar_atendente
+
+entities:
+  - problema
+
+slots:
+  problema:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: problema
+
+responses:
+  utter_saudacao:
+    - text: "Olá! Como posso ajudar você hoje?"
+    - text: "Oi! Em que posso ajudar?"
+    - text: "Bom dia! Como posso assisti-lo?"
+    - text: "Boa tarde! O que você precisa?"
+    - text: "Boa noite! Como posso ajudar você?"
+
+  utter_despedida:
+    - text: "Tchau! Tenha um ótimo dia!"
+    - text: "Até logo! Se precisar, estarei por aqui."
+    - text: "Até mais! Volte sempre!"
+    - text: "Adeus! Espero que tenha um bom dia!"
+    - text: "Falou! Fico à disposição para ajudar."
+    - text: "Nos vemos! Até a próxima!"
+
+  utter_ask_problema:
+    - text: "Qual é o problema que você está enfrentando?"
+
+  utter_fornecer_solucao:
+    - text: "Aqui estão algumas soluções para o seu problema: [link para a solução]."
+
+  utter_encaminhar_atendente:
+    - text: "Vou encaminhar você para um atendente humano. Um momento, por favor."
+
+actions:
+  - action_fornecer_suporte

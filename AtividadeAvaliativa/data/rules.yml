@@ -1,0 +1,23 @@
+version: "3.0"
+rules:
+- rule: Saudação
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+
+- rule: Despedida
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Relatar problema
+  steps:
+  - intent: relatar_problema
+  - slot_was_set:
+    - problema: "informado"
+  - action: action_fornecer_suporte
+
+- rule: Solicitar atendente
+  steps:
+  - intent: solicitar_atendente
+  - action: utter_encaminhar_atendente

@@ -1,0 +1,32 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"problema\": [1.0]}, \"user\": {\"intent\": \"relatar_problema\"}}]": "action_fornecer_suporte",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"problema\": [1.0]}, \"user\": {\"intent\": \"relatar_problema\"}}, {\"prev_action\": {\"action_name\": \"action_fornecer_suporte\"}, \"slots\": {\"problema\": [1.0]}, \"user\": {\"intent\": \"relatar_problema\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}]": "utter_despedida",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_despedida\"}, \"user\": {\"intent\": \"despedida\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}]": "utter_saudacao",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_saudacao\"}, \"user\": {\"intent\": \"saudacao\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}]": "utter_encaminhar_atendente",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}, {\"prev_action\": {\"action_name\": \"utter_encaminhar_atendente\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}]": "action_listen"
+    },
+    "rule_only_slots": [
+      "problema"
+    ],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_despedida\"}, \"user\": {\"intent\": \"despedida\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_saudacao\"}, \"user\": {\"intent\": \"saudacao\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"problema\": [1.0]}, \"user\": {\"intent\": \"relatar_problema\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"problema\": [1.0]}, \"user\": {\"intent\": \"relatar_problema\"}}, {\"prev_action\": {\"action_name\": \"action_fornecer_suporte\"}, \"slots\": {\"problema\": [1.0]}, \"user\": {\"intent\": \"relatar_problema\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}, {\"prev_action\": {\"action_name\": \"utter_encaminhar_atendente\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}]"
+    ]
+  }
+}

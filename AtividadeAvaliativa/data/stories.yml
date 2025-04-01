@@ -1,0 +1,30 @@
+version: "3.0"
+stories:
+- story: saudacao
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+
+- story: relatar problema
+  steps:
+  - intent: relatar_problema
+  - action: action_fornecer_suporte
+
+- story: solicitar atendente
+  steps:
+  - intent: solicitar_atendente
+  - action: utter_encaminhar_atendente
+
+- story: despedida
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- story: fluxo completo
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: relatar_problema
+  - action: action_fornecer_suporte
+  - intent: despedida
+  - action: utter_despedida

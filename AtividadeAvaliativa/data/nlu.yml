@@ -1,0 +1,41 @@
+version: "3.1"
+nlu:
+- intent: saudacao
+  examples: |
+    - Olá
+    - Oi
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+    - E aí
+    - Como vai?
+    - Tudo bem?
+    - Saudações
+    - Hi
+    - Hello
+
+- intent: despedida
+  examples: |
+    - Tchau
+    - Até logo
+    - Até mais
+    - Adeus
+    - Falou
+    - Nos vemos
+    - Até a próxima
+    - Valeu
+    - Bye
+    - See you later
+
+- intent: relatar_problema
+  examples: |
+    - não consigo acessar minha conta
+    - quero mudar meu planoquero mudar meu plano
+    - o aplicativo não funciona
+    - não consigo fazer login
+    - meu plano não está ativo
+    - o app fecha sozinho
+    - como posso mudar meu plano?
+    - estou tendo problemas com o pagamento
+    - não consigo ouvir música
+    - o aplicativo não carrega
