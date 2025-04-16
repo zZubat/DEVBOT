@@ -1,0 +1,55 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - buscar_livro_por_titulo
+  - buscar_livro_por_autor
+  #- buscar_livro_por_assunto
+
+
+entities:
+  - titulo
+  - autor
+  #- assunto
+
+slots:
+  titulo:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: titulo
+
+
+  autor:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: autor
+  
+  autor:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: assunto
+
+responses:
+  utter_saudacao:
+    - text: "Olá como posso te ajudar a encontrar um livro?"
+
+  utter_despedida:
+    - text: "Até logo! Volte sempre para novas descobertas literárias"
+  
+  utter_pergunta_titulo:
+    - text: "Qual é o titulo do livro que você procura?"
+
+  utter_pergunta_autor:
+    - text: "Qual o autor que você quer pesquisar?"
+
+  utter_pergunta_assunto:
+    - text: "Sobre qual assunto você gostaria de ler?"
+
+
+actions:
+  - action_buscar_por_titulo
+  - action_buscar_por_autor
+  - action_buscar_por_assunto

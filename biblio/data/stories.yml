@@ -1,0 +1,18 @@
+version: "3.1"
+
+stories:
+
+- story: buscar por titulo
+  steps:
+  - intent: buscar_livro_por_titulo
+  - action: action_buscar_por_titulo
+
+- story: buscar por autor
+  steps:
+  - intent: buscar_livro_por_autor
+  - action: action_buscar_por_autor
+
+- story: buscar por assunto
+  steps:
+  - intent: buscar_livro_por_assunto
+  - action: action_buscar_por_assunto
