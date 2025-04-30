@@ -4,73 +4,64 @@ nlu:
 - intent: saudacao
   examples: |
     - oi
-    - olá
+    - ola
     - bom dia
     - boa tarde
+    - e aí
+    - como vai?
+    - tudo bem?
+    - olá, tudo certo?
+    - saudações
+    - fala aí
 
+- intent: buscar_livro_por_titulo
+  examples: |
+    - quero um livro chamado [Dom casmurro](titulo)
+    - estou procurando o livro [1984](titulo)
+    - tem o livro [o pequeno principe](titulo)
+    - você tem [Harry Potter e a Pedra Filosofal](titulo)?
+    - me mostra o livro [A revolução dos bichos](titulo)
+    - onde encontro [O Senhor dos Anéis](titulo)?
+    - gostaria de ler [O Hobbit](titulo)
+    - existe o livro [Cem anos de solidão](titulo) disponível?
+    - posso pegar emprestado [A metamorfose](titulo)?
+    - quero saber se vocês têm [Capitães da Areia](titulo)
+
+- intent: buscar_livro_por_autor
+  examples: |
+    - quero livro do [machado de assis](autor)
+    - me mostre obras escrita por [J. K. Rowling](autor)
+    - tem livros do autor [George Orwell](autor)?
+    - quais livros do [Paulo Coelho](autor) vocês têm?
+    - gostaria de ver títulos da [Agatha Christie](autor)
+    - obras do [Stephen King](autor) estão disponíveis?
+    - você tem livros do [Gabriel García Márquez](autor)?
+    - procure livros escritos por [Clarice Lispector](autor)
+    - quero um livro do [José Saramago](autor)
+    - o que tem do [Neil Gaiman](autor) aí?
 
 - intent: despedida
   examples: |
     - tchau
     - até mais
     - valeu
+    - até logo
+    - fui
+    - falou
+    - até a próxima
+    - nos vemos
+    - tenha um bom dia
+    - obrigado, tchau
 
-- intent: affirm
+- intent: buscar_livro_por_assunto
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - quero um livro de [historia](assunto)
+    - tem um livro de [python](assunto)
+    - to procurando livro de [tecnologia](assunto)
+    - preciso de um livro sobre [literatura](assunto)
+    - tem algo sobre [astronomia](assunto)?
+    - me mostra livros sobre [filosofia](assunto)
+    - gostaria de ler algo de [ciência](assunto)
+    - vocês têm livros de [direito](assunto)?
+    - busco livros relacionados a [educação](assunto)
+    - estou interessado em livros de [economia](assunto)

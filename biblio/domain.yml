@@ -4,13 +4,14 @@ intents:
   - saudacao
   - buscar_livro_por_titulo
   - buscar_livro_por_autor
-  #- buscar_livro_por_assunto
+  - buscar_livro_por_assunto
+  - despedida
 
 
 entities:
   - titulo
   - autor
-  #- assunto
+  - assunto
 
 slots:
   titulo:
@@ -26,7 +27,7 @@ slots:
       - type: from_entity
         entity: autor
   
-  autor:
+  assunto:
     type: text
     mappings:
       - type: from_entity
